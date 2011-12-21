@@ -1,0 +1,60 @@
+block myblock {
+
+    tag: 'table'
+
+    content: {
+        tag: 'tr',
+        content: {
+            elem: 'col',
+            content: this.ctx.content
+        }
+    }
+
+    elem col {
+
+        tag: 'td'
+
+        mix: [{ elemMods: { size: 10 } }]
+
+    }
+
+}
+
+block myblock, mod theme 'o' {
+
+    elem col {
+
+        mix: [{ elemMods: { ise: 'size' } }]
+
+    }
+}
+
+block myblock, mod 'm' 'o' {
+
+    elem col {
+
+        //mix: [{ elemMods: { theme: 'on' } }]
+
+        mix, !this.ctx._mix: {
+            var mix,
+                nr = [{ elemMods: { theme: 't' } }];
+
+            mix = apply(this.ctx._mix = true);
+            //console.log(m);
+
+            //mix = (local(this.ctx._mix = true) this.apply());
+
+            return mix ? mix.concat(nr) : nr;
+        }
+
+    }
+}
+
+//
+// Кастомные теги
+//
+
+//this._inBody, tag: 'yspan'
+
+//block b-page, elem body, this._inBody, tag: 'body'
+

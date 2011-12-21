@@ -1,0 +1,17 @@
+block static-text {
+
+    js: true
+
+    elem para {
+
+        tag: 'p'
+
+    }
+
+    elem code {
+
+        tag: 'code'
+
+    }
+
+}

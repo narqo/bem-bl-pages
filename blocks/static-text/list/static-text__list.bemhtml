@@ -1,0 +1,5 @@
+block static-text, elem list {
+
+    tag: ''
+
+}
