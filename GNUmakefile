@@ -51,7 +51,11 @@ DO_GIT=@echo -- git $1 $2; \
 			git submodule add $1 $2; \
 	fi
 
+.PHONY: bem-bl
 bem-bl:
 	$(call DO_GIT,git://github.com/bem/bem-bl.git,$@)
+
+.PHONY: bem-bl/
+bem-bl/: bem-bl
 
 .PHONY: all
