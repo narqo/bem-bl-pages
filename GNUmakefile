@@ -1,7 +1,9 @@
 all:: bem-bl
 all:: $(patsubst %.bemjson.js,%.html,$(wildcard pages/*/*.bemjson.js))
 
-BEM_BUILD=bem build \
+BEM_TECHS_PATH := bem-bl/blocks-common/i-bem/bem/techs/
+
+BEM_BUILD  =bem build \
 	-l bem-bl/blocks-common/ \
 	-l bem-bl/blocks-desktop/ \
 	-l blocks/ \
@@ -11,18 +13,24 @@ BEM_BUILD=bem build \
 	-o $(@D) \
 	-n $(*F)
 
-BEM_CREATE=bem create block \
+BEM_CREATE = bem create block \
 		-f \
 		-l pages \
 		-t $1 \
 		$(*F)
-
-%.html: %.bemhtml.js %.css %.js %.ie.css %.bemhtml.js
-	$(call BEM_CREATE,bem-bl/blocks-common/i-bem/bem/techs/html.js)
+		
+DO_GIT = @echo -- git: updating submodules; \
+	if [[ ! -d $1 ]]; then \
+		git submodule init; \
+	fi; \
+	git submodule update --force
+		
+%.html: %.bemhtml.js %.css %.js %.ie.css
+	$(call BEM_CREATE,$(BEM_TECHS_PATH)html.js)
 
 .PRECIOUS: %.bemhtml.js
 %.bemhtml.js: %.deps.js
-	$(call BEM_BUILD,bem-bl/blocks-common/i-bem/bem/techs/bemhtml.js)
+	$(call BEM_BUILD,$(BEM_TECHS_PATH)/bemhtml.js)
 
 %.deps.js: %.bemdecl.js
 	$(call BEM_BUILD,deps.js)
@@ -42,20 +50,15 @@ BEM_CREATE=bem create block \
 %.js: %.deps.js
 	$(call BEM_BUILD,js)
 
-
-DO_GIT=@echo -- git $1 $2; \
-	if [[ -d $2 ]]; \
-		then \
-			git submodule update; \
-		else \
-			git submodule add $1 $2; \
-	fi
-
 .PHONY: bem-bl
 bem-bl:
-	$(call DO_GIT,git://github.com/bem/bem-bl.git,$@)
+	$(call DO_GIT,$@)
 
-.PHONY: bem-bl/
 bem-bl/: bem-bl
+
+.PHONY: clean
+clean:
+	@echo Cleaning pages
+	@rm -f $(filter-out %.bemjson.js,$(wildcard pages/*/*.*))
 
 .PHONY: all
