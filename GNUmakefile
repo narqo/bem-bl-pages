@@ -20,9 +20,7 @@ BEM_CREATE = bem create block \
 		$(*F)
 		
 DO_GIT = @echo -- git: updating submodules; \
-	if [[ ! -d $1 ]]; then \
-		git submodule init; \
-	fi; \
+	test -d $1 || git submodule init; \
 	git submodule update --force
 		
 %.html: %.bemhtml.js %.css %.js %.ie.css
