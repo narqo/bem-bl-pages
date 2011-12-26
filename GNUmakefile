@@ -28,7 +28,7 @@ DO_GIT = @echo -- git: updating submodules; \
 
 .PRECIOUS: %.bemhtml.js
 %.bemhtml.js: %.deps.js
-	$(call BEM_BUILD,$(BEM_TECHS_PATH)/bemhtml.js)
+	$(call BEM_BUILD,$(BEM_TECHS_PATH)bemhtml.js)
 
 %.deps.js: %.bemdecl.js
 	$(call BEM_BUILD,deps.js)
