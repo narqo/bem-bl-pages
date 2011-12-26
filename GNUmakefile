@@ -3,7 +3,7 @@ all:: $(patsubst %.bemjson.js,%.html,$(wildcard pages/*/*.bemjson.js))
 
 BEM_TECHS_PATH := bem-bl/blocks-common/i-bem/bem/techs/
 
-BEM_BUILD  =bem build \
+BEM_BUILD = bem build \
 	-l bem-bl/blocks-common/ \
 	-l bem-bl/blocks-desktop/ \
 	-l blocks/ \
