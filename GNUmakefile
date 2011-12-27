@@ -3,7 +3,7 @@ all:: $(patsubst %.bemjson.js,%.html,$(wildcard pages/*/*.bemjson.js))
 
 BEM_TECHS_PATH := bem-bl/blocks-common/i-bem/bem/techs/
 
-BEM_BUILD  =bem build \
+BEM_BUILD = bem build \
 	-l bem-bl/blocks-common/ \
 	-l bem-bl/blocks-desktop/ \
 	-l blocks/ \
@@ -21,9 +21,7 @@ BEM_CREATE = bem create block \
 		$(*F)
 		
 DO_GIT = @echo -- git: updating submodules; \
-	if [[ ! -d $1 ]]; then \
-		git submodule init; \
-	fi; \
+	test -d $1 || git submodule init; \
 	git submodule update --force
 		
 %.html: %.bemhtml.js %.css %.js %.ie.css
