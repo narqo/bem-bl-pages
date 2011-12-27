@@ -1,0 +1,17 @@
+.ulist__item{
+    //zoom:expression(
+        runtimeStyle.zoom = 1,
+        insertBefore(createElement("m"), firstChild)
+    );
+}
+.ulist m{
+    font-size:1em;
+
+    position:absolute;
+    margin:0.4em 0 0 -1.5em;
+
+    //zoom:expression(
+        runtimeStyle.zoom = 0,
+        innerText = "&#8212;&#160;"
+    );
+}
