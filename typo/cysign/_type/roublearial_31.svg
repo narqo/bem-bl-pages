@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20100429 at Thu Jan  6 22:36:10 2011 By Vladimir Varankin
+Created by me with FontForge 2.0 (http://fontforge.sf.net)
+</metadata>
+<defs>
+<font id="roubleaFasfJALF" horiz-adv-x="0" >
+<font-face font-family="roublearial" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="750" descent="-250" bbox="80 0 690 700" underline-thickness="50" underline-position="-50" />
+<missing-glyph />
+<glyph glyph-name="b" unicode="b" />
+<glyph glyph-name="u" unicode="u" />
+<glyph glyph-name="B" unicode="B" />
+<glyph glyph-name="U" unicode="U" />
+<glyph glyph-name="period" unicode="." />
+<glyph glyph-name="afii10018" unicode="&#x411;" />
+<glyph glyph-name="afii10037" unicode="&#x423;" />
+<glyph glyph-name="afii10066" unicode="&#x431;" />
+<glyph glyph-name="afii10085" unicode="&#x443;" />
+<glyph glyph-name="hyphen" unicode="-" />
+<glyph glyph-name="r" unicode="r" horiz-adv-x="760" d="M80 285v80h75v335h264c47 0 82 -2 106 -6c102 -15 165 -96 165 -196c0 -60 -19 -111 -57 -152s-107 -61 -206 -61h-179v-62h405v-81h-405v-142h-93v142h-75v81h75v62h-75zM248 617v-250h180c121 0 165 47 165 128c0 59 -31 103 -80 116c-15 4 -44 6 -87 6h-178z" />
+<glyph glyph-name="R" unicode="R" horiz-adv-x="760" d="M80 285v80h75v335h264c47 0 82 -2 106 -6c102 -15 165 -96 165 -196c0 -60 -19 -111 -57 -152s-107 -61 -206 -61h-179v-62h405v-81h-405v-142h-93v142h-75v81h75v62h-75zM248 617v-250h180c121 0 165 47 165 128c0 59 -31 103 -80 116c-15 4 -44 6 -87 6h-178z" />
+<glyph glyph-name="afii10034" unicode="&#x420;" horiz-adv-x="760" d="M80 285v80h75v335h264c47 0 82 -2 106 -6c102 -15 165 -96 165 -196c0 -60 -19 -111 -57 -152s-107 -61 -206 -61h-179v-62h405v-81h-405v-142h-93v142h-75v81h75v62h-75zM248 617v-250h180c121 0 165 47 165 128c0 59 -31 103 -80 116c-15 4 -44 6 -87 6h-178z" />
+<glyph glyph-name="afii10082" unicode="&#x440;" horiz-adv-x="760" d="M80 285v80h75v335h264c47 0 82 -2 106 -6c102 -15 165 -96 165 -196c0 -60 -19 -111 -57 -152s-107 -61 -206 -61h-179v-62h405v-81h-405v-142h-93v142h-75v81h75v62h-75zM248 617v-250h180c121 0 165 47 165 128c0 59 -31 103 -80 116c-15 4 -44 6 -87 6h-178z" />
+</font>
+</defs></svg>

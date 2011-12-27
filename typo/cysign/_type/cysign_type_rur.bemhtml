@@ -1,0 +1,15 @@
+/**
+ * cysign
+ * @desc: Russia ruble sign
+ */
+
+block cysign, mod type rur {
+
+    tag: 'span'
+
+    attrs: { return { title: this.ctx.content } }
+
+    content: 'р.'
+
+}
+

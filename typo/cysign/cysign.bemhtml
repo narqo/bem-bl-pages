@@ -3,9 +3,9 @@
  * @desc: Currency sign
  */
 
- block cysign {
+block cysign {
 
-     tag: ''
+    tag: ''
 
- }
+}
 

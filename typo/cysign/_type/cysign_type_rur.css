@@ -1,0 +1,24 @@
+/* RUR (russian rubble)
+ * Subset contains: -.rubRUBРУБруб
+ */
+@font-face{
+    /* data:uri workarounds */
+    font-family:RoublearialRegular;
+    src:url('roublearial_312-lite.eot'); /* IE9 Compat Modes */
+    src:url('roublearial_312-lite.eot?iefix') format('☠'); /* IE6-IE8 */
+}
+
+@font-face{
+    font-family:RoublearialRegular;
+    src:url(data:application/x-woff;charset=utf-8;base64,d09GRk9UVE8AAAWwAAsAAAAACIwAAQABAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAbsAAAJN7ZJMsUZGVE0AAALEAAAAHAAAABxalimLR0RFRgAAAuAAAAAYAAAAHgAPAB5PUy8yAAAC+AAAAE4AAABgWW9oF2NtYXAAAANIAAAAgwAAAaIj3hGpaGVhZAAAA8wAAAAxAAAANvS3189oaGVhAAAEAAAAAB0AAAAkBXACKGhtdHgAAAQgAAAAEwAAADwN1AFAbWF4cAAABDQAAAAGAAAABgAPUABuYW1lAAAEPAAAAV0AAAJ/xSiZ23Bvc3QAAAWcAAAAEwAAACD/uAAyeJxjZGBhYWBkZOQpyi9NyklNLMpMzGFgZGJgZND9ocjwQ4nxhzLTDxXmHxIskTzMt7t/uv0MYJVheMcvw8AgIMPILSjDIC/DeFuIgQukhYtBmEGGQZVBj8GcwYahjKGJoTcxLTPT0MDA0ALKMDaBMcyhDDMzKMPCCMYwNdYDanEuSk0sSU1RSKpUyE1VKM8syVBwy88rccsvSk9VMNIzUNDIKCkpsNLXTwOKpoFE9YrT9PJSSzSDwH5RcAR5BtlfQMDHwM+gzGDMYMbgzBDMEMbYztjB2MnYxdjN2MPAz8iooqqm7u3jW1hUPH3GzL37fut27/2hspdx797vB/Yy7xX7ofKj448K294/YaI/VL4f+KPCzgcE3xaULSj7rnTn5N3vffeEvuu/+P72jfC+2983iipwfbf5PkFUkWsgVHWL/FQU7e7+GdDN1s3DdYfrTk8PD88L7hf9PLzAWBNmYGJkNPG75utgde230ovvSj807/zRPPndne1d94X5G7ds3DJvX/fx7vc+d1RnFfdn9MZ0c/ye8/uxAxv3dze2bd0rOme176lbFd8dwGEVH/ObV+63Bxs3ABxP5tQAAAAAAQAAAADH/rDfAAAAAMlLrqsAAAAAyUvKAHicY2BkgAA+BjEgyQLETEDMCMEAA18ALnicY2Bi+sE4gYGVgYVpD1MXAwNDD4RmvMtgxPCLgYGJgZWNAUSxAAlGBiQQkOaawuDAoMvizPTuP1AN8xywMFgN0Iw9DApAyAgAs60NPAAAeJxjYGBgZoBgGQZGBhCYA+QxgvksDA1gWgAowsOgx+DEEMQQypDEUMRQyiLIosCizGLI4sDi/P8/UJUubtn/V/4f/L/p/4b/S/5P/T/594/fr36/+H3799nfp6E24gSMbAyElKBpYMIiyIzGZ2FgYEXms6HJszMwcJBiKW0BAJ/II6IAeJxjYGRgYABik9ytN+L5bb4ycDO/AIownPQ+JQ6nAxgYmDYx7QFyORiYQKIAO1sKfAAAAHicY2BkYGDa818BSP5gAAKmTQyMDKiAHwBetwOdAAAAeJxj/MKAAph+MAQQywYAtyQGHgAAAFAAAA8AAHicjZBNTsJAFMf/w5cxGJbEhYtJ3OCC0pbIgh0h6QG6MHFZwrQ0KS2ZDhJ2nsQbaOIhXHgAj+DSO/hvmSALTezLdH7v+70B0MMLBA7fFA+WBbp4t9zAGT4tN3Etbi23cCFKy230xJPlDrrijZGidU7N1FkVC/TxarnBvh+WmwjwZbmFS3FvuY0r8Wi5g754xhwaChFrKiwhscCe/zU1iR1S2lekAAVycnVrJLXXhwOX94ARhrLhriNKbGPjY6yDkppDq6L9BphrFRm1lIu9XCu5S81KBkVugkInSvqOKwcrYzbT0SimNa6sThk7uTLM1Sy75ZhZPbbmiBEZutguMhXpNKIS0pcwKqsjEKpkm0WE39aY8oQnNSVmx6oH7wRDeDw+1/Uo+Jl1KsO6r5xVjalOht7Qdz0Pf9bEaQZwR7fm+6T1aBLj+lWrRpJOpcu0yOXYcV1P/mv3byr8cQ4AAAB4nGNgZgCD/1sZjBiwAAAswgHqAA==) format('woff'),
+        url('roublearial_31.ttf') format('truetype'),
+        url('roublearial_31.svg#roubleaFasfJALF') format('svg');
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+}
+
+.cysign_type_rur{
+    font-family:'RoublearialRegular', sans-serif;
+}
+
