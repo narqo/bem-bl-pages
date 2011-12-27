@@ -1,0 +1,42 @@
+/**
+ * code
+ * @desc: A block of code
+ */
+
+block code {
+
+    tag: 'pre'
+
+    js: true
+
+    content: {
+        elem: 'source',
+        content: this.ctx.content
+    }
+
+    elem source {
+
+        tag: 'code'
+
+        content, !this.ctx._joined: {
+            var text,
+                charMap = {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;'
+                };
+
+            text = apply(this.ctx._joined=true,
+                    this.ctx.content=this.ctx.content.join('\n'));
+
+            function _translateChar(ch) {
+                return charMap[ch] || ch;
+            }
+
+            return text.replace(/[&<>]/g, _translateChar);
+        }
+
+    }
+
+}
+

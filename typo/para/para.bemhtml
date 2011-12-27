@@ -1,0 +1,11 @@
+/**
+ * para
+ * @desc: Paragraph of text
+ */
+
+ block para {
+
+     tag: 'p'
+
+ }
+

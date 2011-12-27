@@ -7,6 +7,7 @@ BEM_BUILD  =bem build \
 	-l bem-bl/blocks-common/ \
 	-l bem-bl/blocks-desktop/ \
 	-l blocks/ \
+	-l typo/ \
 	-l $(@D)/blocks/ \
 	-d $< \
 	-t $1 \

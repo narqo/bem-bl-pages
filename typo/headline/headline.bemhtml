@@ -1,0 +1,17 @@
+/**
+ * headline
+ * @desc: Different headline levels
+ */
+
+ block headline {
+
+     tag: 'h1'
+
+     this.mods && this.mods.level {
+         tag: 'h' + this.mods.level
+     }
+
+     (!this.mods || !this.mods.level), mix: [{ mods: { level: 1 } }]
+
+ }
+

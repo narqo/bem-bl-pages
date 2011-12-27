@@ -1,0 +1,15 @@
+/**
+ * olist
+ * @desc: Ordered list
+ */
+
+ block olist {
+
+    tag: 'ol'
+
+    elem 'item' {
+        tag: 'li'
+    }
+
+ }
+

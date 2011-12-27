@@ -1,0 +1,26 @@
+/**
+ * link
+ * @desc: Link
+ */
+
+block link {
+
+    tag: 'span'
+
+    this.ctx.url, tag: 'a'
+
+    js: true
+
+    attrs: {
+        var ctx = this.ctx,
+            aas = {};
+
+        ctx.id && (aas['id'] = ctx.id);
+        ctx.url && (aas['href'] = ctx.url);
+        ctx.target && (aas['_target'] = ctx.target);
+
+        return aas;
+    }
+
+}
+

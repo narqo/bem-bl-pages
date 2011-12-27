@@ -1,0 +1,11 @@
+/**
+ * emph
+ * @desc: Emphasis
+ */
+
+ block emph {
+
+     tag: 'em'
+
+}
+

@@ -1,0 +1,16 @@
+/**
+ * ulist
+ * @desc: Unordered list
+ */
+
+ block ulist {
+
+    tag: 'ul'
+
+    elem 'item' {
+        tag: 'li'
+    }
+
+ }
+
+

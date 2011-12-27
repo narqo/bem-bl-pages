@@ -1,0 +1,11 @@
+/**
+ * cysign
+ * @desc: Currency sign
+ */
+
+ block cysign {
+
+     tag: ''
+
+ }
+
