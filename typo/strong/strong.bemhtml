@@ -1,0 +1,11 @@
+/**
+ * strong
+ * @desc: Strong
+ */
+
+block strong {
+
+    tag: 'strong'
+
+}
+
