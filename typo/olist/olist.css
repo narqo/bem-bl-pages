@@ -1,0 +1,15 @@
+.olist{
+    margin:0.5em 0 1em 1.2em;
+    padding:0;
+}
+    .olist__item{
+        background: none;
+
+        list-style-type:decimal;
+
+        padding-left:0.3em;
+        margin-left:2em;
+    }
+    .olist__item .olist__item{
+        margin-left:0;
+    }
